@@ -1,12 +1,6 @@
 import "../global.css";
-import { Tabs } from "expo-router";
+import { Slot } from "expo-router";
 
 export default function Layout() {
-  return (
-    <Tabs>
-      <Tabs.Screen name="index" options={{ title: "Inicio" }} />
-      <Tabs.Screen name="history" options={{ title: "Historial" }} />
-      <Tabs.Screen name="settings" options={{ title: "Ajustes" }} />
-    </Tabs>
-  );
+  return <Slot />;
 }
