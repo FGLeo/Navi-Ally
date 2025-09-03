@@ -1,14 +1,12 @@
 import { View, Text, Button } from "react-native";
 import { useRouter } from "expo-router";
 
-export default function Home() {
+export default function History() {
   const router = useRouter();
 
   return (
     <View className="flex-1 items-center justify-center gap-4">
-      <Text className="text-xl">Inicio</Text>
-      <Button title="Historial" onPress={() => router.push("/history")} />
-      <Button title="Ajustes" onPress={() => router.push("/settings")} />
+      <Text className="text-xl">Historial</Text>
       <Button title="Volver" onPress={() => router.back()} />
     </View>
   );
